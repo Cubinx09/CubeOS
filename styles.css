@@ -1,0 +1,41 @@
+body{
+	height: 100vh;
+	font-family: monospace;
+	background-image: url("images/rotating cube.gif");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+p{
+	font-size: 18px;
+}
+
+/* div elements go here */
+.topbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	background: rgba(255,255,255, 0.5);
+	backdrop-filter: 10px;
+	border-radius: 5px;
+}
+.topbar-text{
+	background: rgba(255,255,255, 0.8); 
+	padding: 5px; 
+	border-radius: 5px;
+
+}
+.homepage{
+	border: solid;
+	background: rgba(255,255,255, 0.5);
+	backdrop-filter: blur(20px);
+	width: fit-content; 
+	border-radius: 10px; 
+	padding: 10px; 
+	position: absolute; 
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%);
+	color: ;
+}

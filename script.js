@@ -97,23 +97,6 @@ welcomeScreenOpen.addEventListener("click", function(){
 
 
 // STORE WINDOWS IN DESKTOP ICONS
-var selectedIcon = undefined;
 
-function selectIcon(elmnt){
-  elmnt.classList.add("icon");
-}
 
-function deselectIcon(elmnt){
-  elmnt.classList.remove("icon");
 
-  selectedIcon = undefined;
-}
-
-function handleIconTap(elmnt){
-  if(elmnt.classList.contains("icon")){
-    deselectIcon(elmnt);
-    openWindow(window);
-  }else{
-    selectIcon(elmnt);
-  }
-}

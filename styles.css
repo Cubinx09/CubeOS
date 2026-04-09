@@ -66,6 +66,7 @@ p{
 	text-decoration-line: underline;
 	text-decoration-style: dotted;
 	font-size: 14px;
+	margin: 0px;
 }
 .icon > img{
 	width: 72px;

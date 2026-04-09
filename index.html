@@ -19,13 +19,13 @@
 		</div>
 
 	<!-- ALL OF THE CONTENT  FOR THE WELCOME PAGE -->
-		<div id = "welcome" style = "width: 800px;">
+		<div id = "welcome" class = "window" style = "width: 800px;">
 
 			<!-- CLOSE BUTTON -->
 			<div class = "close-button" id = "welcomeClose">X</div>
 
 			<!-- HANDLER TO MAKE THE WINDOW DRAGGABLE-->
-			<center><p id = "windowheader">Move me around!</p></center>
+			<center><p id = "welcomeheader" style = "margin: 0px;">Move me around!</p></center>
 
 			<center><h1 style = "font-size: 40px; text-decoration: underline;">Cube<abbr title = "Operating System">OS</abbr></h1></center>
 
@@ -37,14 +37,40 @@
 
 			<img src = "" style = "width: fit-content;">
 
-			<p>One of my favorite hobbies is videogames. But, one of my favorite genres to play is fighting games. I have been itching to check them out for quite a while, and not until like, uh, 2 years ago, did I actually start to play them. I don't play a lot of them, but I do want to play more.</p>
+			<p>This WebOS functions more as a personal website. But also, a to-do list and a roulette wheel are provided! Organizing tasks can be a very hard thing to do.</p>
 
 
 			<p> Pretty cool game that you probably need to check out: <a href src="https://suppon.itch.io/spolous">SPOLOUS EX</a>
 			<p> Alongside that check out this album: <a href = "https://murderchannel.bandcamp.com/album/hiroshima-vs-rotterdam"> Hiroshima V.S. Rotterdam </a></p> 
 
 		</div>
+
+	<!-- DESKTOP APPS -->
+	<div id = "desktopApps" style = "padding-top: 64px; padding-left: 16px;">
+
+		<!-- app #1 -->
+		<div class = "icon">
+			<img src = "images\fighting_game.jpg" alt = "mayflash f101">
+			<p>Who I play</p>
+
+			<!-- app windows -->
+		<div class="window" id = "app" style = "display: none;">
+			
+			<div id = "appHeader">
+				<p class = "close-button" id = "appClose">X</p>	
+				<p>Who I main in this FG (nott much)</p>
+			</div>
+
+			
+		</div>
 		
+		</div>
+
+		
+		
+		
+
+	
 
 	<script src = "script.js"></script>
 	</body>

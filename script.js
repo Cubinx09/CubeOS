@@ -16,7 +16,7 @@ function updateTime() {
 
 // MAKE THE DIV ELEMENT DRAGGABLE
 dragElement(document.getElementById("welcome"));
-
+dragElement(document.querySelector("#app"));
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
@@ -58,6 +58,7 @@ function dragElement(elmnt) {
   }
 }
 
+
 // RESIZE DIV ELEMENTS
 
 
@@ -65,6 +66,10 @@ function dragElement(elmnt) {
 var welcomeScreen = document.querySelector("#welcome");
 var welcomeScreenClose = document.querySelector("#welcomeClose");
 var welcomeScreenOpen = document.querySelector("#welcomeOpen");
+
+// for the apps
+var appScreen = document.querySelector("#app");
+var appScreenClose = document.querySelector("#appClose");
 
 
 // makes window dissapear when clicking on the close button
@@ -81,8 +86,34 @@ function openWindow(elmnt){
 welcomeScreenClose.addEventListener("click", function(){
   closeWindow(welcomeScreen);
 });
+appScreenClose.addEventListener("click", function(){
+  closeWindow(appScreen);
+})
 
 // makes the open function an event
 welcomeScreenOpen.addEventListener("click", function(){
   openWindow(welcomeScreen);
 });
+
+
+// STORE WINDOWS IN DESKTOP ICONS
+var selectedIcon = undefined;
+
+function selectIcon(elmnt){
+  elmnt.classList.add("icon");
+}
+
+function deselectIcon(elmnt){
+  elmnt.classList.remove("icon");
+
+  selectedIcon = undefined;
+}
+
+function handleIconTap(elmnt){
+  if(elmnt.classList.contains("icon")){
+    deselectIcon(elmnt);
+    openWindow(window);
+  }else{
+    selectIcon(elmnt);
+  }
+}

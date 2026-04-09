@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html>
-
+<html lang = "en">
 	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=devicewidth, initial-scale=1.0">
+		<title>CubeOS</title>
 		<link rel = "stylesheet" href = "styles.css">
-		<script src = "script.js"></script>
-
 	</head>
 	
 	<body>
-		
 
 		<!-- ALL OF THE CONTENT FOR THE TOP BAR -->
 		<div class = "topbar">
-			<p class = "topbar-text" style = "margin-left: 16px;">CubeOS</p>
+			<!-- OPENS UP THE WELCOME SCREEN -->
+			<p class = "topbar-text" style = "margin-left: 16px; cursor: pointer;" id = "welcomeOpen">CubeOS</p>
+
 			<p class = "topbar-text" style = "margin-right: 16px;" id = "timeElement"></p>
 
 		</div>
 
-	<!-- ALL OF THE CONTENT  FOR THE HOMEPAGE -->
-		<div class = "homepage">
+	<!-- ALL OF THE CONTENT  FOR THE WELCOME PAGE -->
+		<div id = "welcome" style = "width: 800px;">
 
-			<center><h1 style = "font-size: 40px; text-decoration: underline;">Welcome to my OS!</h1></center>
+			<!-- CLOSE BUTTON -->
+			<div class = "close-button" id = "welcomeClose">X</div>
+
+			<!-- HANDLER TO MAKE THE WINDOW DRAGGABLE-->
+			<center><p id = "windowheader">Move me around!</p></center>
+
+			<center><h1 style = "font-size: 40px; text-decoration: underline;">Cube<abbr title = "Operating System">OS</abbr></h1></center>
+
 			<h2 style = "font-size: 30px; text-decoration: underline;">Introduction</h2>
 
 			<p>Hello everyone! I most commonly go online with the name of Cubinx and I present to you my personal WebOS!</p>
@@ -38,6 +46,7 @@
 		</div>
 		
 
+	<script src = "script.js"></script>
 	</body>
 
 </html>

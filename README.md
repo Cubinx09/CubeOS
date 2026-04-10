@@ -6,3 +6,7 @@ I'll go right back to improving the website right after I ship this version. And
 I can't really tell what sort of vibe or aesthetic I'm going for, but it's one that's pleasing to me. I'm planning to add more windows dedicated to more personal website stuff, but also I may add in a roullette wheel. All depends on how I can manage to pull it off.
 
 Once again I'm sorry it looks very dry but! I'll work my best to fix it!!
+
+So far I got clock logic and dragElement logic working. The app you see isn't functional, as I am currently trying to figure out how to make the logic for that work, among other things.
+
+In other words, the only thing you can mess around with is the welcome tab. If you close out of it and want to to reappear, you have to click on "CubeOS" in the topbar. You can also move it around if you click and hold on it.

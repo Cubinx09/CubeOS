@@ -8,6 +8,7 @@ body{
 
 p{
 	font-size: 18px;
+	margin-left: 10px;
 }
 
 /* DIV ELEMENTS GO HERE*/
@@ -50,16 +51,33 @@ p{
 	backdrop-filter: blur(20px);
 	border-radius: 10px; 
 	margin: 0px;
-	padding: 15px; 
+	padding: 10px; 
 	position: absolute; 
 	top: 50%; 
 	left: 50%; 
 	transform: translate(-50%, -50%);
 }
+.window-header{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-bottom: 0px;
+}
+.window-header:hover{
+	cursor: move;
+}
+
+/* styling for the welcome tab */
+.welcome{
+	background: rgba(255,255,255, 0.5); 
+	backdrop-filter: 10px; 
+	border-radius: 10px;
+}
 
 /* styling for the desktop apps */
 .icon{
-	padding: 16px;
+	padding-top: 48px;
+	padding-left: 16px;
 }
 .icon > p{
 	color: white;
@@ -76,4 +94,10 @@ p{
 }
 .icon > img:active{
 	opacity: .5;
+}
+
+/* styling for desktop app window content */
+.fgc{
+	border-radius: 10px;
+	background: rgba(101, 240, 155, 0.8);
 }

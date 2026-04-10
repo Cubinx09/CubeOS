@@ -1,6 +1,6 @@
 // CLOCK LOGIC
 function updateTime() {
-		// converts data of date and time into a string //
+    // converts data of date and time into a string //
         var currentTime = new Date().toLocaleString();
 
         // fetches the time on the desktop //
@@ -16,7 +16,8 @@ function updateTime() {
 
 // MAKE THE DIV ELEMENT DRAGGABLE
 dragElement(document.getElementById("welcome"));
-dragElement(document.querySelector("#app"));
+dragElement(document.querySelector("#fgc"));
+
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
@@ -64,11 +65,14 @@ function dragElement(elmnt) {
 
 // 'OPEN' AND 'CLOSE' DIV ELEMENTS
 var welcomeScreen = document.querySelector("#welcome");
-var welcomeScreenClose = document.querySelector("#welcomeClose");
 var welcomeScreenOpen = document.querySelector("#welcomeOpen");
 
 // for the apps
-var appScreen = document.querySelector("#app");
+var fgcScreen = document.querySelector("#fgc");
+var fgcScreenOpen = document.querySelector("#fgcOpen");
+
+// close buttons
+var welcomeScreenClose = document.querySelector("#welcomeClose");
 var appScreenClose = document.querySelector("#appClose");
 
 
@@ -87,16 +91,15 @@ welcomeScreenClose.addEventListener("click", function(){
   closeWindow(welcomeScreen);
 });
 appScreenClose.addEventListener("click", function(){
-  closeWindow(appScreen);
+  closeWindow(fgcScreen);
 })
 
 // makes the open function an event
 welcomeScreenOpen.addEventListener("click", function(){
   openWindow(welcomeScreen);
 });
-
-
-// STORE WINDOWS IN DESKTOP ICONS
-
+fgcScreenOpen.addEventListener("click", function(){
+  openWindow(fgcScreen);
+});
 
 

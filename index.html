@@ -21,53 +21,62 @@
 	<!-- ALL OF THE CONTENT  FOR THE WELCOME PAGE -->
 		<div id = "welcome" class = "window" style = "width: 800px;">
 
-			<!-- CLOSE BUTTON -->
-			<div class = "close-button" id = "welcomeClose">X</div>
 
-			<!-- HANDLER TO MAKE THE WINDOW DRAGGABLE-->
-			<center><p id = "welcomeheader" style = "margin: 0px;">Move me around!</p></center>
-
-			<center><h1 style = "font-size: 40px; text-decoration: underline;">Cube<abbr title = "Operating System">OS</abbr></h1></center>
-
-			<h2 style = "font-size: 30px; text-decoration: underline;">Introduction</h2>
-
-			<p>Hello everyone! I most commonly go online with the name of Cubinx and I present to you my personal WebOS!</p>
-
-			<p>I am 17 years old, live in Jersey, and I have 2 cats!</p>
-
-			<img src = "" style = "width: fit-content;">
-
-			<p>This WebOS functions more as a personal website. But also, a to-do list and a roulette wheel are provided! Organizing tasks can be a very hard thing to do.</p>
-
-
-			<p> Pretty cool game that you probably need to check out: <a href src="https://suppon.itch.io/spolous">SPOLOUS EX</a>
-			<p> Alongside that check out this album: <a href = "https://murderchannel.bandcamp.com/album/hiroshima-vs-rotterdam"> Hiroshima V.S. Rotterdam </a></p> 
-
-		</div>
-
-	<!-- DESKTOP APPS -->
-	<div id = "desktopApps" style = "padding-top: 64px; padding-left: 16px;">
-
-		<!-- app #1 -->
-		<div class = "icon">
-			<img src = "images\fighting_game.jpg" alt = "mayflash f101">
-			<p>Who I play</p>
-
-			<!-- app windows -->
-		<div class="window" id = "app" style = "display: none;">
+			<!-- WELCOME HEADER -->
+			<div id = "welcomeheader" class = "window-header">
+				<!-- CLOSE BUTTON -->
+				<div class = "close-button" id = "welcomeClose">X</div>
+			</div></center>
 			
-			<div id = "appHeader">
-				<p class = "close-button" id = "appClose">X</p>	
-				<p>Who I main in this FG (nott much)</p>
+			<div class = "welcome">
+				<center><h1 style = "font-size: 40px; text-decoration: underline;">Cube<abbr title = "Operating System">OS</abbr></h1></center>
+
+				<img src = "" style = "width: fit-content;">
+
+				<p>Hello everyone! I most commonly go online with the name of Cubinx and I present to you my personal WebOS!</p>
+
+				<p>This WebOS functions more as a personal website. But also, a roulette wheel is present to make things more fun. Oooo.</p><br>
 			</div>
 
-			
-		</div>
+			<center><p style = "font-size: 14px;"> P.S., Click on 'CubeOS' in the topbar to view this window again.</p></center>
+			</div>
+
+	<!-- DESKTOP ICONS -->
+
+		<!-- fgc icon -->
+		<div id = "fgcOpen" class = "icon">
+			<img src = "images/fighting_game.jpg" alt = "Mayflash f101">
+				<p>Who I play</p>
+
 		</div>
 
-		
-		
-		
+
+	<!-- DESKTOP APPS -->
+
+		<!-- fgc app -->
+		<div id = "fgc" class = "window" style = "width: 500px; display: none;">
+			<!-- handler thing -->
+				<div class = "window-header" id = "fgcheader">
+					<div class = "close-button" id = "appClose">X</div>
+				</div>
+
+			<!-- body content -->
+			<div class = "fgc">
+				<h2>Who do I play in these fighting games?</h2>
+				<p>The list is very short, unfortunately.</p>
+
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+
+
 
 	
 

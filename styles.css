@@ -50,12 +50,12 @@ p{
 	background: rgba(255,255,255, 0.5);
 	backdrop-filter: blur(20px);
 	border-radius: 10px; 
-	margin: 0px;
-	padding: 10px; 
+	padding: 10px;
 	position: absolute; 
 	top: 50%; 
 	left: 50%; 
 	transform: translate(-50%, -50%);
+	overflow-y: auto;
 }
 .window-header{
 	display: flex;
@@ -97,7 +97,28 @@ p{
 }
 
 /* styling for desktop app window content */
+.app-heading{
+	margin-left: 10px;
+	text-decoration: underline;
+}
+.app-image{
+	width: 40%;
+	height: 40%;
+}
 .fgc{
 	border-radius: 10px;
-	background: rgba(101, 240, 155, 0.8);
+	background: url(images/fire_gif.gif);
+	background-size: 35%;
+}
+.fgc-text{
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 5px;
+	width: 80%;
+	border-radius: 5px;
+}
+.fgc-img{
+	display: flex;
+	column-gap: 10px;
+	margin-right: 40px;
+	padding-top: 10px;
 }

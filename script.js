@@ -17,6 +17,7 @@ function updateTime() {
 // MAKE THE DIV ELEMENT DRAGGABLE
 dragElement(document.getElementById("welcome"));
 dragElement(document.querySelector("#fgc"));
+dragElement(document.querySelector("#gameRec"))
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -70,10 +71,12 @@ var welcomeScreenOpen = document.querySelector("#welcomeOpen");
 // for the apps
 var fgcScreen = document.querySelector("#fgc");
 var fgcScreenOpen = document.querySelector("#fgcOpen");
-
+var gameRecScreen = document.querySelector("#gameRec");
+var gameRecScreenOpen = document.querySelector("#gameOpen");
 // close buttons
 var welcomeScreenClose = document.querySelector("#welcomeClose");
-var appScreenClose = document.querySelector("#appClose");
+var fgcScreenClose = document.querySelector("#fgcClose");
+var gameRecScreenClose = document.querySelector("#gameClose");
 
 
 // makes window dissapear when clicking on the close button
@@ -90,9 +93,13 @@ function openWindow(elmnt){
 welcomeScreenClose.addEventListener("click", function(){
   closeWindow(welcomeScreen);
 });
-appScreenClose.addEventListener("click", function(){
+fgcScreenClose.addEventListener("click", function(){
   closeWindow(fgcScreen);
-})
+});
+gameRecScreenClose.addEventListener("click", function(){
+  closeWindow(gameRecScreen);
+});
+
 
 // makes the open function an event
 welcomeScreenOpen.addEventListener("click", function(){
@@ -101,5 +108,10 @@ welcomeScreenOpen.addEventListener("click", function(){
 fgcScreenOpen.addEventListener("click", function(){
   openWindow(fgcScreen);
 });
+gameRecScreenOpen.addEventListener("click", function(){
+  openWindow(gameRecScreen);
+});
+
+
 
 

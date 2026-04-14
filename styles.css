@@ -126,9 +126,16 @@ p{
 .game-rec{
 	background-color: rgb(245, 218, 100);
 	border-radius: 10px;
-	height: 65vh;
+	height: 66vh;
 }
 .table-of-contents{
+	display: grid;
+	gap: 10px;
 	list-style-type: none;
 	font-size: 18px;
+}
+
+/* article styling */
+.article-window{
+	width: 600px;
 }

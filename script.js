@@ -17,7 +17,12 @@ function updateTime() {
 // MAKE THE DIV ELEMENT DRAGGABLE
 dragElement(document.getElementById("welcome"));
 dragElement(document.querySelector("#fgc"));
-dragElement(document.querySelector("#gameRec"))
+dragElement(document.querySelector("#gameRec"));
+dragElement(document.querySelector("#CodeName"));
+dragElement(document.querySelector("#beetle"));
+dragElement(document.querySelector("#spolousEx"));
+dragElement(document.querySelector("#goldenIdol"));
+dragElement(document.querySelector("#metalDogs"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -73,10 +78,28 @@ var fgcScreen = document.querySelector("#fgc");
 var fgcScreenOpen = document.querySelector("#fgcOpen");
 var gameRecScreen = document.querySelector("#gameRec");
 var gameRecScreenOpen = document.querySelector("#gameOpen");
+
+// for the articles
+var codeNameSteamScreen = document.querySelector("#CodeName");
+var codeNameSteamScreenOpen = document.querySelector("#CodeNameOpen");
+var beetleScreen = document.querySelector("#beetle");
+var beetleScreenOpen = document.querySelector("#beetleOpen");
+var spolousExScreen = document.querySelector("#spolousEx");
+var spolousExScreenOpen = document.querySelector("#spolousExOpen");
+var goldenIdolScreen = document.querySelector("#goldenIdol");
+var goldenIdolScreenOpen = document.querySelector("#goldenIdolOpen");
+var metalDogsScreen = document.querySelector("#metalDogs");
+var metalDogsScreenOpen = document.querySelector("#metalDogsOpen");
+
 // close buttons
 var welcomeScreenClose = document.querySelector("#welcomeClose");
 var fgcScreenClose = document.querySelector("#fgcClose");
 var gameRecScreenClose = document.querySelector("#gameClose");
+var codeNameSteamScreenClose = document.querySelector("#CodeNameClose");
+var beetleScreenClose = document.querySelector("#beetleClose");
+var spolousExScreenClose = document.querySelector("#spolousExClose");
+var goldenIdolScreenClose = document.querySelector("#goldenIdolClose");
+var metalDogsScreenClose = document.querySelector("#metalDogsClose");
 
 
 // makes window dissapear when clicking on the close button
@@ -99,6 +122,21 @@ fgcScreenClose.addEventListener("click", function(){
 gameRecScreenClose.addEventListener("click", function(){
   closeWindow(gameRecScreen);
 });
+codeNameSteamScreenClose.addEventListener("click", function(){
+  closeWindow(codeNameSteamScreen);
+});
+beetleScreenClose.addEventListener("click", function(){
+  closeWindow(beetleScreen);
+})
+spolousExScreenClose.addEventListener("click", function(){
+  closeWindow(spolousExScreen);
+});
+goldenIdolScreenClose.addEventListener("click", function(){
+  closeWindow(goldenIdolScreen);
+});
+metalDogsScreenClose.addEventListener("click", function(){
+  closeWindow(metalDogsScreen);
+})
 
 
 // makes the open function an event
@@ -111,6 +149,21 @@ fgcScreenOpen.addEventListener("click", function(){
 gameRecScreenOpen.addEventListener("click", function(){
   openWindow(gameRecScreen);
 });
+codeNameSteamScreenOpen.addEventListener("click", function(){
+  openWindow(codeNameSteamScreen);
+});
+beetleScreenOpen.addEventListener("click", function(){
+  openWindow(beetleScreen);
+});
+spolousExScreenOpen.addEventListener("click", function(){
+  openWindow(spolousExScreen);
+});
+goldenIdolScreenOpen.addEventListener("click", function(){
+  openWindow(goldenIdolScreen);
+});
+metalDogsScreenOpen.addEventListener("click", function(){
+  openWindow(metalDogsScreen);
+})
 
 
 

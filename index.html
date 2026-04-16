@@ -5,6 +5,7 @@
 		<meta name = "viewport" content = "width=devicewidth, initial-scale=1.0">
 		<title>CubeOS</title>
 		<link rel = "stylesheet" href = "styles.css">
+
 	</head>
 	
 	<body>
@@ -18,16 +19,59 @@
 
 		</div>
 
-	<!-- ALL OF THE CONTENT  FOR THE WELCOME PAGE -->
+
+		<!-- MUSIC PLAYER -->
+
+		<div class = "music-player">
+
+			 <!-- Define the section for displaying details -->
+		    <div class="details">
+		      <div class="now-playing">PLAYING x OF y</div>
+		      <div class="track-name">Track Name</div>
+		      <div class="track-artist">Track Artist</div>
+		    </div>
+
+		    <!-- Define the section for displaying track buttons -->
+		    <div class="buttons">
+		      <div class="prev-track" onclick="prevTrack()">
+		      		<p><<</p>
+		      </div>
+		      <div class="playpause-track" onclick="playpauseTrack()">
+		      		<p>Paused</p>
+
+		      </div>
+		      <div class="next-track" onclick="nextTrack()">
+		      		<p>>></p>
+		    </div>
+
+		    <!-- Define the section for displaying the seek slider-->
+		    <div class="slider_container">
+		      <div class="current-time">00:00</div>
+		      <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+		      <div class="total-duration">00:00</div>
+
+		    </div>
+
+		    <!-- Define the section for displaying the volume slider-->
+		    <div class="slider_container">
+		      <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+		    </div>
+		  </div>
+
+		</div>
+		
+
+
+		<!-- ALL OF THE CONTENT  FOR THE WELCOME PAGE -->
 		<div id = "welcome" class = "window" style = "width: 800px;">
 
 
 			<!-- WELCOME HEADER -->
 			<div id = "welcomeheader" class = "window-header">
-				<!-- CLOSE BUTTON -->
+								<!-- CLOSE BUTTON -->
 				<div class = "close-button" id = "welcomeClose">X</div>
-			</div></center>
-			
+			</div>
+
 			<div class = "welcome">
 				<center><h1 style = "font-size: 40px; text-decoration: underline;">Cube<abbr title = "Operating System">OS</abbr></h1></center>
 
@@ -36,10 +80,11 @@
 				<p>Hello everyone! I most commonly go online with the name of Cubinx and I present to you my personal WebOS!</p>
 
 				<p>This WebOS functions more as a personal website. But also, a roulette wheel is present to make things more fun. Oooo.</p><br>
-			</div>
+				</div>
 
 			<center><p style = "font-size: 14px;"> P.S., Click on 'CubeOS' in the topbar to view this window again.</p></center>
 			</div>
+
 
 	<!-- DESKTOP ICONS -->
 
@@ -57,7 +102,7 @@
 	<!-- DESKTOP APPS -->
 
 		<!-- fgc app -->
-		<div id = "fgc" class = "window" style = "width: 520px; height: 400px; display: none;">
+		<div id = "fgc" class = "window" style = "width: 520px; height: 500px; display: none;">
 			<!-- handler thing -->
 				<div class = "window-header" id = "fgcheader">
 					<div class = "close-button" id = "fgcClose">X</div>
@@ -141,7 +186,7 @@
 			</div>
 
 			<h1> CODE NAME S.T.E.A.M. </h1>
-			<h2>Alien invasion in steampunk, 1800s Britain!</h2>
+			<h2>Alien invasion in steampunk, 1860s Britain!</h2>
 
 		</div>
 

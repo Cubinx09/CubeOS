@@ -11,7 +11,7 @@ p{
 	margin-left: 10px;
 }
 
-/* DIV ELEMENTS GO HERE*/
+/* WINDOW ELEMENTS GO HERE*/
 
 /* styling for the close button */
 .close-button{
@@ -64,7 +64,7 @@ p{
 	padding-bottom: 0px;
 }
 .window-header:hover{
-	cursor: move;
+  cursor: move;
 }
 
 /* styling for the welcome tab */
@@ -78,22 +78,23 @@ p{
 .icon{
 	padding-top: 48px;
 	padding-left: 16px;
-}
-.icon > p{
-	color: white;
+  width: 80px;
+  p{
+   	color: white;
 	text-decoration-line: underline;
 	text-decoration-style: dotted;
 	font-size: 14px;
 	margin: 0px;
-}
-.icon > img{
+  }
+  img{
 	width: 72px;
 	height: 72px;
 	border: solid black 3px;
 	border-radius: 5px;
-}
-.icon > img:active{
+    img:active{
 	opacity: .5;
+    }
+  }
 }
 
 /* styling for desktop app window content */
@@ -101,27 +102,31 @@ p{
 	margin-left: 10px;
 	text-decoration: underline;
 	padding-top: 10px;
-}
-.app-image{
-	width: 40%;
-	height: 40%;
+  img{
+    width: 40%;
+    height: 40%;
+  }
 }
 .fgc{
 	border-radius: 10px;
 	background: url(images/fire_gif.gif);
-	background-size: 35%;
-}
-.fgc-text{
+	background-size: 40%;
+  .fgc-text{
 	background-color: rgba(255, 255, 255, 0.8);
 	width: 80%;
 	border-radius: 5px;
 	list-style-type: none;
-}
-.fgc-img{
-	display: flex;
-	column-gap: 10px;
-	margin-right: 40px;
-	padding-top: 10px;
+  }
+  img{
+    height: 40%;
+  width: 40%;
+  }
+  .fgc-img{
+    display: flex;
+    column-gap: 10px;
+    margin: 0px 40px 0px 0px;
+    padding: 10px 0px 0px 0px;
+  }
 }
 .game-rec{
 	background-color: rgb(245, 218, 100);
@@ -138,4 +143,69 @@ p{
 /* article styling */
 .article-window{
 	width: 600px;
+}
+
+
+/* MUSIC PLAYER STYLINGS */
+.music-player{
+	height: 100px;
+	width: 600px;
+	display: flex;
+	flex-directiom: column;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.5);
+	border: solid black 3px;
+	border-radius: 10px;
+	padding-bottom: 25px;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%);
+
+	.details{
+		background: rgba(255, 255, 255, 0.8);
+		border-radius: 10px;
+		backdrop-filter: blur(10px);
+		margin: 25px 20px 0px 10px;
+		padding: 0px 10px 0px 10px;
+	}
+
+	.now-playing, .track-name, .track-artist{
+		font-size: 20px;
+	}
+
+	.buttons{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 10px;
+		margin-right: 15px;
+	}
+
+	.next-track, .prev-track{
+		cursor: pointer;
+	}
+	.slider-container{
+		width: 75%;
+	}
+	.seek_slider, .volume_slider{
+		appearance: none;
+		height: 5px;
+		background: rgba(184, 0, 184);
+		.seek_slider::-webkit-slider-thumb,.volume_slider::-webkit-slider-thumb{
+			width: 15px;
+			height: 15px;
+			background: rgba(255, 0, 255);
+			cursor: pointer;
+			border-radius: 50%;
+			border: none;
+		}
+	}
+	.seek_slider{
+		width: 80%;
+	}
+	.volume_slider{
+		width: 50%;
+	}
+
 }

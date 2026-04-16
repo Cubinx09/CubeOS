@@ -13,6 +13,8 @@ So far (as this is unfinished), the WebOS has:
 	- 1 half finished app
 	- Functional music player
 
+All app screens (welcome screen, apps) are fully draggable and can be closed like a OS tab.
+
 Planning to add other things. Keep in touch!
 
 # Tech Stack

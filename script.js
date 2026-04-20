@@ -202,8 +202,8 @@ let track_list = [
     path: "music/02 DieTRAX - KI-KI-KI-SS ME MORE.mp3",
   },
   {
-    name: "SP-TRIP MACHINE（JUNGLE MIX",
-    artist: "DE-SIRE (DDR)",
+    name: "SP-TRIP MACHINE（JUNGLE MIX)",
+    artist: "Naoki Maeda (DDR)",
     path: "music/SP-TRIP MACHINE（JUNGLE MIX）.mp3",
   },
 ];

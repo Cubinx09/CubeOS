@@ -11,6 +11,11 @@ p{
 	margin-left: 10px;
 }
 
+a{
+	text-decoration: none;
+	color: blue;
+}
+
 /* WINDOW ELEMENTS GO HERE*/
 
 /* styling for the close button */
@@ -70,7 +75,7 @@ p{
 /* styling for the welcome tab */
 .welcome{
 	background: rgba(255,255,255, 0.5); 
-	backdrop-filter: 10px; 
+	backdrop-filter: 20px; 
 	border-radius: 10px;
 }
 
@@ -107,6 +112,7 @@ p{
     height: 40%;
   }
 }
+
 .fgc{
 	border-radius: 10px;
 	background: url(images/fire_gif.gif);
@@ -124,10 +130,11 @@ p{
   .fgc-img{
     display: flex;
     column-gap: 10px;
-    margin: 0px 40px 0px 0px;
-    padding: 10px 0px 0px 0px;
+    margin-right: 40px;
+    padding-top: 10px;
   }
 }
+
 .game-rec{
 	background-color: rgb(245, 218, 100);
 	border-radius: 10px;
@@ -136,13 +143,41 @@ p{
 .table-of-contents{
 	display: grid;
 	gap: 10px;
-	list-style-type: none;
 	font-size: 18px;
 }
 
 /* article styling */
 .article-window{
 	width: 600px;
+	height: 400px;
+	border: solid;
+	background: rgba(0,0,0, 0.5);
+	backdrop-filter: blur(20px);
+	border-radius: 10px; 
+	padding: 10px;
+	position: absolute; 
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%);
+	overflow-y: scroll;
+	.article-body{
+		background: rgba(255,255,255, 0.8);
+		border-radius: 10px;
+	}
+	h1{
+		margin: 10px 0px 0px 10px;
+		text-decoration: underline;
+	}
+	p,h2,h3{
+		margin-left: 10px;
+	}
+	img{
+		width: 70%;
+		border-radius: 5px;
+	}
+	ul{
+		font-size: 18px;
+	}
 }
 
 
@@ -153,19 +188,19 @@ p{
 	display: flex;
 	flex-directiom: column;
 	align-items: center;
-	background: rgba(255, 255, 255, 0.5);
-	border: solid black 3px;
+	background: rgba(0, 0, 0, 0.5);
+	border: solid rgb(27, 32, 46) 3px;
 	border-radius: 10px;
 	padding-bottom: 25px;
 	position: absolute;
-	top: 80%;
+	top: 85%;
 	left: 50%;
 	transform: translate(-50%);
 
 	.details{
 		background: rgba(255, 255, 255, 0.8);
 		border-radius: 10px;
-		backdrop-filter: blur(10px);
+		backdrop-filter: blur(20px);
 		margin: 25px 20px 0px 10px;
 		padding: 0px 10px 0px 10px;
 	}
@@ -180,9 +215,7 @@ p{
 		align-items: center;
 		gap: 10px;
 		margin-right: 15px;
-	}
-
-	.next-track, .prev-track{
+		color: white;
 		cursor: pointer;
 	}
 	.slider-container{

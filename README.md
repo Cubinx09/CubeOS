@@ -14,6 +14,7 @@ So far (as this is unfinished), the WebOS has:
 	- Functional music player
 
 All app screens (welcome screen, apps) are fully draggable and can be closed like a OS tab.
+
 For the music player, it has a playlist of 3 songs, and it also has a previous and next button, a pause/play button, and a volume slider (second slider to the right).
 
 Planning to add other things. Keep in touch!

@@ -25,6 +25,7 @@ dragElement(document.querySelector("#beetle"));
 dragElement(document.querySelector("#spolousEx"));
 dragElement(document.querySelector("#goldenIdol"));
 dragElement(document.querySelector("#metalDogs"));
+dragElement(document.querySelector("#art"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -78,6 +79,8 @@ var fgcScreen = document.querySelector("#fgc");
 var fgcScreenOpen = document.querySelector("#fgcOpen");
 var gameRecScreen = document.querySelector("#gameRec");
 var gameRecScreenOpen = document.querySelector("#gameOpen");
+var artScreen = document.querySelector("#art");
+var artScreenOpen = document.querySelector("#artOpen");
 
 // for the articles
 var codeNameSteamScreen = document.querySelector("#CodeName");
@@ -100,6 +103,7 @@ var beetleScreenClose = document.querySelector("#beetleClose");
 var spolousExScreenClose = document.querySelector("#spolousExClose");
 var goldenIdolScreenClose = document.querySelector("#goldenIdolClose");
 var metalDogsScreenClose = document.querySelector("#metalDogsClose");
+var artScreenClose = document.querySelector("#artClose");
 
 
 // makes window dissapear when clicking on the close button
@@ -110,6 +114,7 @@ function closeWindow(elmnt){
 // makes welcome window reappear when clicking on 'CubeOS'
 function openWindow(elmnt){
   elmnt.style.display = "block";
+
 }
 
 // makes the close function an event
@@ -136,7 +141,10 @@ goldenIdolScreenClose.addEventListener("click", function(){
 });
 metalDogsScreenClose.addEventListener("click", function(){
   closeWindow(metalDogsScreen);
-})
+});
+artScreenClose.addEventListener("click", function(){
+  closeWindow(artScreen);
+});
 
 
 // makes the open function an event
@@ -163,13 +171,28 @@ goldenIdolScreenOpen.addEventListener("click", function(){
 });
 metalDogsScreenOpen.addEventListener("click", function(){
   openWindow(metalDogsScreen);
-})
+});
+artScreenOpen.addEventListener("click", function(){
+  openWindow(artScreen);
+});
+
+// CHANGE Z-INDEX
+var windows = document.getElementsByClassName("window");
+for(let i = 0; i < windows.length; i++){
+    let eachWindow = windows[i];
+    eachWindow.addEventListener("mousedown", function(){
+        windows = document.getElementsByClassName("window"); // redefine in case number of windows has changed for some reason (depends on the project ig)
+        for(let j = 0; j < windows.length; j++){
+             windows[j].style.zIndex = "1";
+        }
+        this.style.zIndex = "2";
+    });
+}
 
 
 
 // MUSIC PLAYER //
 let now_playing = document.querySelector(".now-playing");
-let track_art = document.querySelector(".track-art");
 let track_name = document.querySelector(".track-name");
 let track_artist = document.querySelector(".track-artist");
 
@@ -258,9 +281,12 @@ function nextTrack() {
 }
 
 function prevTrack() {
-  if (track_index > 0 -1)
+  if (track_index > 0){
     track_index -= 1;
-  else track_index = track_list.length;
+  }
+  else {
+    track_index = track_list.length;
+  }
   loadTrack(track_index);
   playTrack();
 }

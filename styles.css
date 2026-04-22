@@ -37,6 +37,7 @@ a{
 	padding-bottom: 0px;
 	position: sticky;
 	top: 0;
+	z-index: 3;
 	}
 .window-header:hover{
   cursor: move;
@@ -62,7 +63,7 @@ a{
 	align-items: flex-start;
 	width: 100%;
 	background: rgba(255,255,255, 0.5);
-	backdrop-filter: 10px;
+	backdrop-filter: blur(10px);
 	border-radius: 5px;
 .topbar-text{
 	background: rgba(255,255,255, 0.8); 
@@ -76,7 +77,7 @@ a{
 /* styling for the welcome tab */
 .welcome{
 	background: rgba(255,255,255, 0.5); 
-	backdrop-filter: 20px; 
+	backdrop-filter: blur(20px); 
 	border-radius: 10px;
 }
 
@@ -149,6 +150,9 @@ a{
 }
 
 .art{
+	background: linear-gradient(#000675, #4AD5ED);
+	position: sticky;
+	right: 0;
 	h1,h2{
 		text-decoration: underline;
 	}
@@ -156,6 +160,12 @@ a{
 		width: 20%;
 		border: 3px solid black;
 		border-radius: 3px;
+	}
+	a{
+		color: rgb(255, 0, 0);
+	}
+	a:hover{
+		color: rgb(255, 0, 255);
 	}
 	.art-gallery{
 		display: flex;
@@ -165,7 +175,7 @@ a{
 		padding: 0px 10px 0px 10px;
 		}
 	}
-}
+
 
 /* article styling */
 .article-window{
@@ -213,7 +223,6 @@ a{
 	height: 100px;
 	width: 750px;
 	display: flex;
-	flex-directiom: column;
 	align-items: center;
 	background: rgba(0, 0, 0, 0.5);
 	border: solid rgb(27, 32, 46) 3px;

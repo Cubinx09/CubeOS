@@ -26,12 +26,13 @@ dragElement(document.querySelector("#spolousEx"));
 dragElement(document.querySelector("#goldenIdol"));
 dragElement(document.querySelector("#metalDogs"));
 dragElement(document.querySelector("#art"));
+dragElement(document.querySelector("#notes"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.querySelector(elmnt.id + "header")) {
+  if (document.getElementById(elmnt.id + "header")) {
     // if present, the header is where you move the DIV from:
-    document.querySelector(elmnt.id + "-header").onmousedown = dragMouseDown;
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
   } else {
     // otherwise, move the DIV from anywhere inside the DIV:
     elmnt.onmousedown = dragMouseDown;
@@ -81,6 +82,8 @@ var gameRecScreen = document.querySelector("#gameRec");
 var gameRecScreenOpen = document.querySelector("#gameOpen");
 var artScreen = document.querySelector("#art");
 var artScreenOpen = document.querySelector("#artOpen");
+var noteScreen = document.querySelector("#notes");
+var noteScreenOpen = document.querySelector("#notesOpen");
 
 // for the articles
 var codeNameSteamScreen = document.querySelector("#CodeName");
@@ -104,6 +107,7 @@ var spolousExScreenClose = document.querySelector("#spolousExClose");
 var goldenIdolScreenClose = document.querySelector("#goldenIdolClose");
 var metalDogsScreenClose = document.querySelector("#metalDogsClose");
 var artScreenClose = document.querySelector("#artClose");
+var noteScreenClose = document.querySelector("#notesClose");
 
 
 // makes window dissapear when clicking on the close button
@@ -145,6 +149,9 @@ metalDogsScreenClose.addEventListener("click", function(){
 artScreenClose.addEventListener("click", function(){
   closeWindow(artScreen);
 });
+noteScreenClose.addEventListener("click", function(){
+  closeWindow(noteScreen);
+});
 
 
 // makes the open function an event
@@ -174,6 +181,9 @@ metalDogsScreenOpen.addEventListener("click", function(){
 });
 artScreenOpen.addEventListener("click", function(){
   openWindow(artScreen);
+});
+noteScreenOpen.addEventListener("click", function(){
+  openWindow(noteScreen);
 });
 
 // CHANGE Z-INDEX
@@ -322,3 +332,36 @@ function seekUpdate() {
     total_duration.textContent = durationMinutes + ":" + durationSeconds;
   }
 }
+
+// DOWNLOADING NOTES
+function download(file, text){
+  // creating an invinsible element
+
+  let e = document.createElement('a');
+
+  e.setAttribute('href', 'data:text/plain;charset=utf-8, ' + encodeURIComponent(text));
+  e.setAttribute('download', file);
+  document.body.appendChild(e);
+  e.click();
+
+  document.body.removeChild(e);
+}
+
+// start file download
+document.getElementById("btn").addEventListener("click",function(){
+  let text = document.getElementById("text").value;
+
+  let filename = "notes.txt";
+
+  download(filename,text);
+  
+}, false);
+
+//REFRESH TEXTAREA
+const textarea = document.getElementById("text");
+var refresBtn = document.getElementById("refresh");
+
+refresh.addEventListener('click', function(){
+  console.log(textarea.value);
+  textarea.value = '';
+});

@@ -83,7 +83,7 @@
 				</div>
 
 			<center><p style = "font-size: 14px;"> P.S., Click on 'CubeOS' in the topbar to view this window again.</p></center>
-			<center><p style = "font-size: 14px;">+ click and drag window tab headers to move them around!</center>
+			<center><p style = "font-size: 14px;">+ click and drag the windoes to move them around!</center>
 			</div>
 
 
@@ -102,6 +102,11 @@
 		<div id = "artOpen" class = "icon">
 			<img src = "" alt = "me stuff">
 			<p>My Art</p>
+
+		</div>
+		<div id = "notesOpen" class = "icon">
+			<img src = "" alt = "notepad">
+			<p>Notepad</p>
 
 		</div>
 
@@ -195,7 +200,7 @@
 			</div>
 
 				<div class = "art">
-					<h1>Shameless self-promo (kind of (I don't really know.))</h1>
+					<h1 class = "app-heading">Shameless self-promo (kind of (I don't really know.))</h1>
 					<p>I make art and I make stuff and I want to share it because I like showing off things like most artists.</p><br>
 
 					<h2> YOUTUBE CHANNEL!!! (I upload whenever I feel like it)</h2>
@@ -215,6 +220,29 @@
 
 		</div>
 
+
+		<!-- notepad app -->
+		<div id = "notes" class = "window" style = "width: 500px; height: 500px; display: none;">
+			<div class = "window-header" id = "notesheader">
+				<div class = "close-button" id = "notesClose">X</div>
+			</div>
+
+			<div class = "notes">
+				<h1>Notepad for your convience :)</h1>
+
+				<div class = "notes-body">
+					<textarea id = "text" class = "input-box">Type something!</textarea>
+				</div>
+
+				<div class = "note-btn">
+					<button id = "btn" type="button" value= "Download">Download notes</button>
+					<button id = "refresh" type = "button">Refresh</button>
+
+				</div>
+
+			</div>
+
+		</div>
 
 
 
@@ -238,7 +266,7 @@
 				<!--body paragraphs-->
 				<p>Strategy RPGs aren't for everyone, I used to think that, but would you pay attention if I told you Lincoln was in this one?</p>
 				<p>Historical fiction. Steampunk. Aliens. And a not dead Lincoln, this game has everything.</p>
-				<p>Being serious now, Code Name S.T.E.A.M. is a strategy RPG developed by Intellegent Systems, who you know most for the Fire Emblem seires, modern WarioWare, and the Paper Mario series. That's quite the credibility.</p>
+				<p>Being serious now, Code Name S.T.E.A.M. is a strategy RPG developed by Intellegent Systems, who you know most for the Fire Emblem seires, WarioWare, and the Paper Mario series. That's quite the credibility.</p>
 				<p>Code Name S.T.E.A.M. is a bit simpler than most other strategy RPGS. Code Name has fully 3D Maps, with a 3rd shooter camera, meaning you have to traverse through the limited amount of spaces you can move. This also means that for all weapons in the game, you have to aim to do damage. Another thing is that there are no 'troops' like other SRPGs, instead, every 'type' of troop (I don't know much of SRPGs I'm sorry) is personified by one singular character. Every alien in the game (unless stated or mechanically proven otherwise), has a weak spot that once aimed at correctly, does extra damage, rewarding good aim.</p>
 				<p>These quirks make Code Name S.T.E.A.M. stand out from other games, if the premise didn't pique your interest enough.</p>
 				<p>I haven't fully finished the game but I can GUARANTEE that you'll have fun with it. It never takes itself seriously, in fact, it relishes in the crazy ideas it just keeps introducing, and for that I think it's best to play the game as blind as possible to be surprised by what ever thing you find as "crazy".</p>
@@ -293,12 +321,12 @@
 				<br><h1>SPOLOUS EX</h1>
 				<h2>Arcade shoot em' up in the browser! (or as .exe if you prefer)</h2>
 
-				<center><img src = "images/spolous_ex.png" alt = "SPOLOUS EX title screen"></center>
+				<center><img src = "images/spolous_ex.webp" alt = "SPOLOUS EX title screen"></center>
 				<h4>Available platforms: Browser/Windows</h4><hr>
 
 				<p>You have played an arcade shoot em' up before, I know you did. Galaga? Centipede? Other game titles? Well anyways, instead of going to the arcades to play one of those, how about going onto the web browser?</p>
-				<p>Okay, for starters SPOLOUS EX doesn't scroll upwards but it scrolls horizontally like Graidus. In fact, it's a Gradius-like (if that's even an official term), with it sharing many of it's features of it's grandfather. That part doesn't really matter, what does matter is that the inspiration is on it's sleeves, as many SPOLOUS EX levels are almost a 1:1 to the original Gradius. What does set it apart though, is that SPOLOUS EX gives you the option to pick between >12 forms of the spaceship you pilot, each giving different playstyles, huge difference from the original Gradius.</p>
-				<p>One huge hurdle the game has is that it was developed by a singular Japanese developer, Suppon, so the english translation that you see is very shaky so I'll provide the controls down in this list to avoid confusion.</p>
+				<p>Okay, for starters SPOLOUS EX doesn't scroll upwards but it scrolls horizontally like Gradius. In fact, it's a Gradius-like (if that's even an official term), with it sharing many of it's features of it's grandfather. That part doesn't really matter, what does matter is that the inspiration is on it's sleeves, as many SPOLOUS EX levels are almost a 1:1 to the original Gradius. What does set it apart though, is that SPOLOUS EX gives you the option to pick between >12 forms of the spaceship you pilot, each giving different playstyles, huge difference from the original.</p>
+				<p>One huge hurdle the game has is that it was developed by a singular Japanese developer, suppon, so the english translation that you see is very shaky so I'll provide the controls down in this list to avoid confusion.</p>
 
 				<h3>Controls (on keyboard)</h3>
 				<ul>
@@ -372,7 +400,7 @@
 				<p>Graphics are a bit on the weaker side, despite being a 3 year old game, but I think it adds to the aesthetic. Everything is meant to be seen as ugly because everything and everyone you meet has been irradiated and mutated into something unrecognizable. I don't why tanks are a common enemy though. Did they gain a conscious?</p>
 				<p>I do have some quams with the game though, and it might get bolstered because I'm playing it on a Switch 1 (which is often in handheld mode), but they're more nitpicky and more my personal preference. For starters, the mini-map takes up too much of the screen, and second, the text is too small. Neither of these things can be changed in the settings. If this is a turn-off, then that's ok.</p>
 				<p> I can look past this though because the game is geniunely interesting and I'm surprised more people haven't talked about it. Then again, most indie games aren't massively popular.</p>
-				<p>METAL DOGS developers, 24framesinc., hasn't made much besides METAL DOGS, doesn't mean anything besides that they're newer to game develop and haven't really garnered an audience, but it also tells me that team is geniunely talented, so if you want, keep an eye out.</p>
+				<p>METAL DOGS developers, 24framesinc., hasn't made much besides METAL DOGS, doesn't mean anything besides that they're newer to game development and haven't really garnered an audience, but it also tells me that team is geniunely talented, so if you want, keep an eye out.</p>
 
 				<ul>
 					<li><a href = "https://youtu.be/vOydOaZsxAc">METAL DOGS trailer</a></li>

@@ -5,6 +5,7 @@
 		<meta name = "viewport" content = "width=devicewidth, initial-scale=1.0">
 		<title>CubeOS</title>
 		<link rel = "stylesheet" href = "styles.css">
+		<link rel = "stylesheet" href="mobile.css">
 
 	</head>
 	
@@ -21,7 +22,6 @@
 
 
 		<!-- MUSIC PLAYER -->
-
 		<div class = "music-player">
 
 			 <!-- Define the section for displaying details -->
@@ -63,13 +63,11 @@
 
 
 		<!-- ALL OF THE CONTENT  FOR THE WELCOME PAGE -->
-		<div id = "welcome" class = "window" style = "width: 800px;">
-
-
+		<div id = "welcome" class = "window">
 			<!-- WELCOME HEADER -->
 			<div id = "welcomeheader" class = "window-header">
 								<!-- CLOSE BUTTON -->
-				<div class = "close-button" id = "welcomeClose">X</div>
+				<div class = "close-button" id = "welcomeClose">&times;</div>
 			</div>
 
 			<div class = "welcome">
@@ -96,7 +94,7 @@
 
 		</div>
 		<div id = "gameOpen" class = "icon">
-			<img src = "images/scroll.jpg">
+			<img src = "images/scroll.webp">
 			<p>Game Recommendations</p>
 		</div>
 		<div id = "artOpen" class = "icon">
@@ -113,7 +111,7 @@
 	<!-- DESKTOP APPS -->
 
 		<!-- fgc app -->
-		<div id = "fgc" class = "window" style = "width: 520px; height: 500px; display: none;">
+		<div id = "fgc" class = "window" style = "display: none;">
 			<!-- handler thing -->
 				<div class = "window-header" id = "fgcheader">
 					<div class = "close-button" id = "fgcClose">X</div>
@@ -138,16 +136,16 @@
 
 					<a href = "https://wiki.supercombo.gg/w/Ultimate_Marvel_vs_Capcom_3" target="_blank">
 						<div class = "fgc-img">
-							<img src = "images\UMVC3_Tron_Portrait.webp" alt = "tron" class = "app-image">
-							<img src = "images\UMVC3_Chris_Portrait.webp" alt = "chris" style = "width: 18%; height: 18%;">
-							<img src = "images\UMVC3_Doctor_Doom_Portrait.webp" alt = "doom" class = "app-image">
+							<img src = "images\UMVC3_Tron_Portrait.webp" alt = "tron">
+							<img src = "images\UMVC3_Chris_Portrait.webp" alt = "chris" class = "chris">
+							<img src = "images\UMVC3_Doctor_Doom_Portrait.webp" alt = "doom">
 						</div>
 					</a>
 
 					<li class = "fgc-text"> Zato-1 (Guilty Gear Strive)</li>
 
 					<a href = "https://www.dustloop.com/w/GGST" target="_blank">
-						<img src = "images\GGST_Zato-1_Portrait.png" alt = "zato" class = "app-image">
+						<img src = "images\GGST_Zato-1_Portrait.webp" alt = "zato" class = "app-image">
 					</a>
 
 				</ul>
@@ -159,7 +157,7 @@
 		</div>
 
 		<!-- game recommendation app -->
-		<div id = "gameRec" class = "window" style = "width: 400px; height: 600px; display: none;">
+		<div id = "gameRec" class = "window" style = "display: none;">
 			<!-- header -->
 			<div class = "window-header" id = "gameRecheader">
 					<div class = "close-button" id = "gameClose">X</div>
@@ -194,7 +192,7 @@
 
 
 		<!-- Self-promo app type shi -->
-		<div id = "art" class = "window" style = "width: 800px; height: 500px;display: none;">
+		<div id = "art" class = "window" style = "display: none;">
 			<div class = "window-header" id = "artheader">
 				<div class = "close-button" id = "artClose">X</div>
 			</div>
@@ -204,17 +202,17 @@
 					<p>I make art and I make stuff and I want to share it because I like showing off things like most artists.</p><br>
 
 					<h2> YOUTUBE CHANNEL!!! (I upload whenever I feel like it)</h2>
-					<a href = "https://www.youtube.com/channel/UCZs0vLJl4cZzWigTJYf0YIg/featured" style = "font-size: 24px;" target="_blank">https://www.youtube.com/channel/UCZs0vLJl4cZzWigTJYf0YIg/featured</a><br><hr>
+					<a href = "https://www.youtube.com/channel/UCZs0vLJl4cZzWigTJYf0YIg/featured" target="_blank">https://www.youtube.com/channel/UCZs0vLJl4cZzWigTJYf0YIg/featured</a><br><hr>
 
 					<h2>Some Art I made</h2>
 
-					<div class = "art-gallery">
-						<img src = "images\IMG_0398(1).webp">
-						<img src = "images\IMG_7688.webp">
-						<img src = "images\IMG_7560.webp">
-						<img src = "images\IMG_8386.webp">
+					<div class = "gallery">
+						<img src = "images\IMG_0398(1).webp" onclick = "openModal('modal1')">
+						<img src = "images\IMG_7688.webp" onclick="openModal('modal2')">
+						<img src = "images\IMG_7560.webp" onclick="openModal('modal3')">
+						<img src = "images\IMG_8386.webp" onclick = "openModal('modal4')">
 					</div>
-					<center><p style  = "font-size: 14px;">Right click and press "open image in new tab" to get a bigger view</p></center><br>
+					<center><p style  = "font-size: 14px;">Press the images to see in their original size</p></center><br>
 
 				</div>
 
@@ -222,7 +220,7 @@
 
 
 		<!-- notepad app -->
-		<div id = "notes" class = "window" style = "width: 500px; height: 500px; display: none;">
+		<div id = "notes" class = "window" style = "display: none;">
 			<div class = "window-header" id = "notesheader">
 				<div class = "close-button" id = "notesClose">X</div>
 			</div>
@@ -245,6 +243,28 @@
 		</div>
 
 
+
+		<!-- MODAL IMAGES FOR ART GALLERY -->
+		<div id="modal1" class="modal">
+		  <span class="close" onclick="closeModal('modal1')">&times;</span>
+		  <img src="images\IMG_0398(1).webp" class="modal-content">
+
+		</div>
+		<div id="modal2" class="modal">
+		  <span class="close" onclick="closeModal('modal2')">&times;</span>
+		  <img src="images\IMG_7688.webp" class="modal-content">  
+
+		</div>
+		<div id="modal3" class="modal">
+		  <span class="close" onclick="closeModal('modal3')">&times;</span>
+		  <img src="images\IMG_7560.webp" alt="Northern Lights" class="modal-content">
+
+		</div>
+		<div id="modal4" class="modal">
+		  <span class="close" onclick="closeModal('modal4')">&times;</span>
+		  <img src="images\IMG_8386.webp" alt="Mountains" class="modal-content modal4-content">
+
+		</div>
 
 
 		<!-- GAME REC ARTICLE PAGES -->
@@ -359,7 +379,7 @@
 			<div class = "article-body">
 				<br><h1>The Case of the Golden Idol</h1>
 				<h2>Point and Clicks are not at all dead</h2>
-				<center><img src = "images/golden_idol.jpg" alt = "idol banner art (I think)"></center>
+				<center><img src = "images/golden_idol.webp" alt = "idol banner art (I think)"></center>
 				<h4>Available platforms: Pretty much everywhere AND on mobile. crazy</h4><hr>
 
 				<p>This artifact keeps getting tied for murders with its possessors and we don't know why! It's up to you to look at several scenarios spanning decades, look for clues, and fill in the blanks to figure out how said people died. Mostly murder.</p>

@@ -10,7 +10,7 @@ function updateTime() {
         timeText.innerHTML = currentTime;
     }
 
-    // function runds every 1 second//
+    // function runs every 1 second//
     setInterval(updateTime, 1000);
 
 
@@ -333,7 +333,10 @@ function seekUpdate() {
   }
 }
 
-// DOWNLOADING NOTES
+
+
+
+//----- DOWNLOADING NOTES ------
 function download(file, text){
   // creating an invinsible element
 
@@ -357,7 +360,7 @@ document.getElementById("btn").addEventListener("click",function(){
   
 }, false);
 
-//REFRESH TEXTAREA
+//------ REFRESH TEXTAREA -----
 const textarea = document.getElementById("text");
 var refresBtn = document.getElementById("refresh");
 
@@ -365,3 +368,20 @@ refresh.addEventListener('click', function(){
   console.log(textarea.value);
   textarea.value = '';
 });
+
+
+
+//--------- DISPLAY AND NOT DISPLAY MODAL IMAGES --------
+function openModal(modalId) {
+  let modal = document.getElementById(modalId);
+  modal.style.display = "flex";
+  modal.classList.add("show");
+}
+
+function closeModal(modalId) {
+  let modal = document.getElementById(modalId);
+  modal.classList.remove("show");
+  setTimeout(function () {
+    modal.style.display = "none";
+  });
+}

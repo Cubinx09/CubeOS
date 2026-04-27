@@ -1,0 +1,171 @@
+#welcome{
+	width: 60em;
+}
+#fgc{
+	width: 34em;
+	height: 32em;
+}
+#gameRec{
+	width: 30em;
+	height: 47em;
+}
+#art{
+	width: 60em; 
+	height: 32em;
+}
+#notes{
+	width: 35em; 
+	height: 35em;
+}
+.chris{
+	width: 18%; 
+	height: 18%;
+}
+
+@media screen and (max-width: 800px){
+	.topbar-text{
+		font-size: 24px;
+	}
+	.close-button{
+		width: 50px;
+		height: 50px;
+		font-size: 30px;
+	}
+	.icon{
+		width: 120px;
+		img{
+			width: 110px;
+			height: 110px;
+		}
+		p{
+			font-size: 20px;
+		}
+	}
+	.app-heading{
+		font-size: 50px;
+	}
+	#welcome{
+		width: 50em;
+		p{
+			font-size: 30px;
+		}
+	}
+	
+	#fgc{
+		width: 55em;
+		height: 45em;
+		p{
+			font-size: 30px;
+		}
+		h3{
+			font-size: 28px;
+		}
+		li{
+			font-size: 24px;
+		}
+		img{
+			width: 70%;
+			height: 70%;
+		}
+		.chris{
+			width: 28%;
+			height: 28%;
+		}
+		.fgc{
+			padding-right: 60px;
+		}
+	}
+	
+	#gameRec{
+		width: 45em;
+		height: 50em;
+		padding-right: 20px;
+		p{
+			font-size: 30px;
+		}
+		.game-rec{
+			padding-bottom: 30px;
+			li{
+				margin-left: 30px;
+				font-size: 30px;
+
+			}
+		}
+	}
+
+	.article-window{
+		width: 700px;
+		height: 500px;
+		.article-body{
+			h2{
+				font-size: 32px;
+			}
+			h3{
+				font-size: 30px;
+			}
+			h4{
+				font-size: 25px;
+			}
+			p{
+				font-size: 30px;
+			}
+			li{
+				font-size: 28px;
+			}
+		}
+	}
+
+	#art{
+		width: 55em;
+		height: 60em;
+		.art{
+			p{
+				font-size: 30px;
+			}
+			h2{
+				font-size: 32px;
+			}
+			a{
+				width: 100%;
+			}
+			.gallery{
+			   flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+				gap: 30px;
+			}
+			img{
+				width: 50%;
+			}
+			a{
+				width: 100%;
+				font-size: 30px;
+			}
+		}
+	}
+	.modal{
+		.close{
+			font-size: 80px;
+		}
+		.modal-content{
+			width: 80%;
+			height: auto;
+		}
+		.modal4-content{
+		width: 90%;
+		height: auto;
+		}
+	}
+
+	.music-player{
+		height: 150px;
+		.playpause-track{
+			font-size: 24px;
+		}
+		.now-playing, .track-name, .track-artist{
+		font-size: 24px;
+		}
+	}
+
+
+}

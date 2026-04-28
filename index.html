@@ -33,16 +33,20 @@
 
 		    <!-- Define the section for displaying track buttons -->
 		    <div class="buttons">
-		      <div class="prev-track" onclick="prevTrack()">
-		      		<p><<</p>
-		      </div>
-		      <div class="playpause-track" onclick="playpauseTrack()">
-		      		<p>Paused</p>
 
-		      </div>
-		      <div class="next-track" onclick="nextTrack()">
-		      		<p>>></p>
-		    </div>
+				<div class = "track-buttons">
+					<div class="prev-track" onclick="prevTrack()">
+				      		<p><<</p>
+				    </div>
+				    <div class="playpause-track" onclick="playpauseTrack()">
+				      	<p>Paused</p>
+
+				    </div>
+				    <div class="next-track" onclick="nextTrack()">
+				     	<p>>></p>
+				    </div>
+
+				</div>
 
 		    <!-- Define the section for displaying the seek slider-->
 		    <div class="slider_container">
@@ -67,7 +71,7 @@
 			<!-- WELCOME HEADER -->
 			<div id = "welcomeheader" class = "window-header">
 								<!-- CLOSE BUTTON -->
-				<div class = "close-button" id = "welcomeClose">&times;</div>
+				<div class = "close-button" id = "welcomeClose">X</div>
 			</div>
 
 			<div class = "welcome">
@@ -81,7 +85,7 @@
 				</div>
 
 			<center><p style = "font-size: 14px;"> P.S., Click on 'CubeOS' in the topbar to view this window again.</p></center>
-			<center><p style = "font-size: 14px;">+ click and drag the windoes to move them around!</center>
+			<center><p style = "font-size: 14px;">+ click and drag the windows to move them around!</center>
 			</div>
 
 
@@ -94,16 +98,16 @@
 
 		</div>
 		<div id = "gameOpen" class = "icon">
-			<img src = "images/scroll.webp">
+			<img src = "images/scroll.webp" alt = "recommendation list">
 			<p>Game Recommendations</p>
 		</div>
 		<div id = "artOpen" class = "icon">
-			<img src = "" alt = "me stuff">
+			<img style = "background: white;" src = "images/smeargle.webp" alt = "me stuff">
 			<p>My Art</p>
 
 		</div>
 		<div id = "notesOpen" class = "icon">
-			<img src = "" alt = "notepad">
+			<img src = "images/notepad.webp" alt = "notepad">
 			<p>Notepad</p>
 
 		</div>
@@ -137,7 +141,7 @@
 					<a href = "https://wiki.supercombo.gg/w/Ultimate_Marvel_vs_Capcom_3" target="_blank">
 						<div class = "fgc-img">
 							<img src = "images\UMVC3_Tron_Portrait.webp" alt = "tron">
-							<img src = "images\UMVC3_Chris_Portrait.webp" alt = "chris" class = "chris">
+							<img class = "chris" src = "images\UMVC3_Chris_Portrait.webp" alt = "chris">
 							<img src = "images\UMVC3_Doctor_Doom_Portrait.webp" alt = "doom">
 						</div>
 					</a>
@@ -184,7 +188,7 @@
 						<li><a href = "#goldenIdol" id = "goldenIdolOpen">The Case of the Golden Idol</a></li>
 						<li><a href = "#metalDogs" id = "metalDogsOpen">METAL DOGS</a></li>
 					</ol>
-				</div>
+				</div><br><br>
 
 			</div>	
 

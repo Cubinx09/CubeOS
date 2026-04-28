@@ -17,20 +17,46 @@
 	width: 35em; 
 	height: 35em;
 }
-.chris{
-	width: 18%; 
-	height: 18%;
+
+/* ------------ PHONES ----------- */
+
+@media only screen and (max-width: 600px){
+	#welcome{
+		width: 300px;
+	}
+	
+	.icon{
+		width: 70px;
+		height: 70px;
+		margin-bottom: 5px;
+	}
+	
+	
+	
+	.music-player{
+		width: 80%;
+	}
+
 }
 
-@media screen and (max-width: 800px){
+
+
+
+
+/* ----------- TABLETS -------- */
+
+@media only screen and (min-width: 768px) and (max-width: 992px){
 	.topbar-text{
 		font-size: 24px;
 	}
-	.close-button{
-		width: 50px;
-		height: 50px;
+	.window-header{
+		.close-button{
+		width: 40px;
+		height: 40px;
 		font-size: 30px;
+		}
 	}
+	
 	.icon{
 		width: 120px;
 		img{
@@ -68,8 +94,8 @@
 			height: 70%;
 		}
 		.chris{
-			width: 28%;
-			height: 28%;
+			width: 32%;
+			height: 32%;
 		}
 		.fgc{
 			padding-right: 60px;
@@ -159,13 +185,78 @@
 
 	.music-player{
 		height: 150px;
-		.playpause-track{
+		width: 100%;
+		.now-playing, .track-name, .track-artist{
 			font-size: 24px;
 		}
-		.now-playing, .track-name, .track-artist{
-		font-size: 24px;
+		.buttons{
+			.track-buttons{
+				p{
+					font-size: 24px;
+				 }
+			  }
+			  .current-time, .total-duration{
+			  	font-size: 18px;
+			  }
+			 .current-time{
+			 	margin-bottom: 20px;
+			 }
+			 .total-duration{
+			 	margin-top: 20px;
+			 }
+			 .seek_slider, .volume_slider{
+			 	height: 20px;
+			 }
+			 .seek_slider::-webkit-slider-thumb,.volume_slider::-webkit-slider-thumb{
+				width: 40px;
+				height: 40px;
+			}
+			.seek_slider::-moz-range-thumb,.volume_slider::-moz-range-thumb{
+				width: 40px;
+				height: 40px;
+
+			}
+			.volume_slider{
+					width: 150px;
+			}
+
 		}
+
 	}
 
+	#notes{
+		width: 50em;
+		height: 50em;
+
+		.notes{
+			grid-template-areas: 
+			"heading heading heading"
+			"note note note"
+			"note note note"
+			"btn btn btn"
+			;
+
+			.input-box{
+				position: absolute;
+				left: 50%;
+				transform: translate(-50%);
+				width: 31.5em;
+				height: auto;
+				font-size: 20px;
+			}
+			.note-btn{
+				position: relative;
+				top: 33em;
+				left: 26%;
+			}
+			button{
+				font-size: 20px;
+				border-radius: 5px;
+			}
+
+
+		}
+
+	}
 
 }

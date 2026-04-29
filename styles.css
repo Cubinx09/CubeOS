@@ -1,9 +1,38 @@
 body{
 	height: 100vh;
 	font-family: monospace;
-	background-image: url("images/rotating cube.gif");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+  --s: 200px; /* control the size*/
+  background:
+    repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 50%) 
+     calc(var(--s)/2) calc(var(--s)*tan(30deg)/2),
+    repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 50%);
+  background-size: var(--s) calc(var(--s)*tan(30deg));
+  animation: gradient 10s ease-in-out infinite alternate;
+}
+
+@keyframes gradient{
+		to{
+			--c1: rgb(28, 116, 140);
+			--c2: rgb(145, 217, 82);
+			--c3: rgb(47, 173, 139);
+		}
+}
+
+@property --c1 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: rgb(15,22,43);
+}
+
+@property --c2 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: rgb(97, 46, 114);
+}
+@property --c3{
+	syntax: '<color>';
+	inherits: false;
+	initial-value: rgb(40,20, 99);
 }
 
 p{
@@ -15,6 +44,8 @@ a{
 	text-decoration: none;
 	color: blue;
 }
+
+/* ----------- BACKGROUND ------------ */
 
 /* WINDOW ELEMENTS GO HERE*/
 
@@ -296,13 +327,13 @@ a{
 	  cursor: pointer;
 	  transition: transform 0.3s;
 	}
-}	
+
 
 
 
 /* article styling */
 .article-window{
-	max-width: 800px;
+	width: 800px;
 	height: 400px;
 	border: solid white 3px;
 	background: rgba(0,0,0, 0.5);
@@ -317,29 +348,29 @@ a{
 	.article-body{
 		background: rgba(255,255,255, 0.8);
 		border-radius: 10px;
-	}
-	h1{
+			h1{
 		margin: 10px 0px 0px 10px;
 		text-decoration: underline;
-	}
-	h3{
-		font-size: 20px;
-	}
-	h4{
-		font-size: 16px;
-	}
-	p,h2,h3,h4{
-		margin-left: 10px;
-	}
-	img{
-		width: 70%;
-		border-radius: 5px;
-	}
-	ul{
-		font-size: 18px;
-	}
-	li{
-		margin-bottom: 8px;
+		}
+		h3{
+			font-size: 20px;
+		}
+		h4{
+			font-size: 16px;
+		}
+		p,h2,h3,h4{
+			margin-left: 10px;
+		}
+		img{
+			width: 70%;
+			border-radius: 5px;
+		}
+		ul{
+			font-size: 18px;
+		}
+		li{
+			margin-bottom: 8px;
+		}
 	}
 }
 

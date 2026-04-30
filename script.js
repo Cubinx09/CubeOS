@@ -27,6 +27,8 @@ dragElement(document.querySelector("#goldenIdol"));
 dragElement(document.querySelector("#metalDogs"));
 dragElement(document.querySelector("#art"));
 dragElement(document.querySelector("#notes"));
+dragElement(document.querySelector("#aboutMe"));
+dragElement(document.querySelector("#eightCube"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -84,6 +86,10 @@ var artScreen = document.querySelector("#art");
 var artScreenOpen = document.querySelector("#artOpen");
 var noteScreen = document.querySelector("#notes");
 var noteScreenOpen = document.querySelector("#notesOpen");
+var aboutMeScreen = document.querySelector("#aboutMe");
+var aboutMeScreenOpen = document.querySelector("#aboutOpen");
+var eightCubeScreen = document.querySelector("#eightCube");
+var eightCubeScreenOpen = document.querySelector("#cubeOpen");
 
 // for the articles
 var codeNameSteamScreen = document.querySelector("#CodeName");
@@ -108,6 +114,8 @@ var goldenIdolScreenClose = document.querySelector("#goldenIdolClose");
 var metalDogsScreenClose = document.querySelector("#metalDogsClose");
 var artScreenClose = document.querySelector("#artClose");
 var noteScreenClose = document.querySelector("#notesClose");
+var aboutMeScreenClose = document.querySelector("#aboutMeClose");
+var eightCubeScreenClose = document.querySelector("#eightCubeClose");
 
 
 // makes window dissapear when clicking on the close button
@@ -152,6 +160,12 @@ artScreenClose.addEventListener("click", function(){
 noteScreenClose.addEventListener("click", function(){
   closeWindow(noteScreen);
 });
+aboutMeScreenClose.addEventListener("click",function(){
+  closeWindow(aboutMeScreen);
+});
+eightCubeScreenClose.addEventListener("click", function(){
+  closeWindow(eightCubeScreen);
+});
 
 
 // makes the open function an event
@@ -184,6 +198,12 @@ artScreenOpen.addEventListener("click", function(){
 });
 noteScreenOpen.addEventListener("click", function(){
   openWindow(noteScreen);
+});
+aboutMeScreenOpen.addEventListener("click", function(){
+  openWindow(aboutMeScreen);
+});
+eightCubeScreenOpen.addEventListener("click", function(){
+  openWindow(eightCubeScreen);
 });
 
 // CHANGE Z-INDEX
@@ -385,3 +405,31 @@ function closeModal(modalId) {
     modal.style.display = "none";
   });
 }
+
+
+// --------- 8 BALL GENERATOR ---------
+function randomNumGenerator (min, max){
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// sayings
+const sayings = [
+  "It is certain",
+  "It is decidedly so",
+  "Without a doubt",
+  "Yes, definetely",
+  "You may rely on it",
+  "Don't count on it",
+  "My reply is no",
+  "My sources say no",
+  "Very doubtful",
+];
+
+// returns random saying
+function getSaying(){
+  var randomIndex = randomNumGenerator(0,sayings.length - 1);
+
+  return sayings[randomIndex];
+}
+
+console.log(getSaying());

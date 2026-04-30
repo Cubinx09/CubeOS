@@ -2,8 +2,8 @@
 	width: 60em;
 }
 #fgc{
-	width: 34em;
-	height: 32em;
+	width: 36em;
+	height: 34em;
 }
 #gameRec{
 	width: 30em;
@@ -16,6 +16,14 @@
 #notes{
 	width: 35em; 
 	height: 35em;
+}
+#aboutMe{
+	width: 55em;
+	height: 35em;
+}
+#eightCube{
+	width: 38em;
+	height: 38em;
 }
 
 /* ------------ PHONES ----------- */
@@ -38,6 +46,7 @@
 		width: 325px;
 		height: 550px;
 		.fgc{
+			background-size: 200%;
 			img{
 				width: 100%;
 				height: auto;

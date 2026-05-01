@@ -20,9 +20,9 @@ All window screens (welcome screen, apps) are fully draggable and can be closed 
 
 - #### Notepad: A fully functional notepad app where you can download when you wrote in a textarea as a .txt, or refresh everything and start anew.
 
-- ### About Me: Short blog on who I am!
+- #### About Me: Short blog on who I am!
 
-- ### 8 cube: It's an 8 ball, but as a cube.. Get it? Press the button to shake the cube and see what you get!
+- #### 8 cube: It's an 8 ball, but as a cube.. Get it? Press the button to shake the cube and see what you get!
 
 - #### Music Player: A fully functional, albeit barebones, music player consisting of a track list of 3 songs, a previous and next button, a pause/play button, and volume and seek sliders (song length slider).
 Take note, the songs aren't supposed to have a theme, it's just 3 songs that I like.

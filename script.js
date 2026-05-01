@@ -245,19 +245,14 @@ let curr_track = document.createElement('audio');
 // Define the tracks that have to be played
 let track_list = [
   {
-    name: "Empty Your Mind",
-    artist: "KenKoTaiji",
-    path: "music/Empty Your Mind - KenKoTaiji.mp3",
+    name: "Electrified",
+    artist: "SysF. (DDR)",
+    path: "music/1-03 - Electrified.mp3",
   },
   {
-    name: "KI-KI-KI-SS ME MORE",
-    artist: "DIETRAX",
-    path: "music/02 DieTRAX - KI-KI-KI-SS ME MORE.mp3",
-  },
-  {
-    name: "SP-TRIP MACHINE（JUNGLE MIX)",
-    artist: "Naoki Maeda (DDR)",
-    path: "music/SP-TRIP MACHINE（JUNGLE MIX）.mp3",
+    name: "the end",
+    artist: "Goreshit",
+    path: "music/05 the end - goreshit.mp3",
   },
 ];
 
@@ -432,4 +427,10 @@ function getSaying(){
   return sayings[randomIndex];
 }
 
-console.log(getSaying());
+let roll = document.querySelector("#roll");
+roll.onclick = function(){
+  let random = getSaying();
+  let answer = document.querySelector(".text");
+
+  answer.textContent = random;
+}

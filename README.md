@@ -1,16 +1,14 @@
 # CubeOS
-Doing a webOS jam for the lock-in sidequest! I found the idea cool, and flavortown is about to wrap up, so why not, you know.
-
+A WebOS project that's meant for lock-in! Project for Hackclub's Flavortown.
 
 # Features
 
-So far (as this is a WIP), the WebOS has:
+The WebOS offers the following:
 
 	- Functional clock
 	- Welcome screen
-	- 2 fully customized apps
-	- 2 half finished apps
-	- Functional music player
+	- 6 apps to look at!!
+	- Functional music player with songs of my choosing
 
 All window screens (welcome screen, apps) are fully draggable and can be closed like a computer window.
 
@@ -22,7 +20,15 @@ All window screens (welcome screen, apps) are fully draggable and can be closed 
 
 - #### Notepad: A fully functional notepad app where you can download when you wrote in a textarea as a .txt, or refresh everything and start anew.
 
+- ### About Me: Short blog on who I am!
+
+- ### 8 cube: It's an 8 ball, but as a cube.. Get it? Press the button to shake the cube and see what you get!
+
 - #### Music Player: A fully functional, albeit barebones, music player consisting of a track list of 3 songs, a previous and next button, a pause/play button, and volume and seek sliders (song length slider).
+Take note, the songs aren't supposed to have a theme, it's just 3 songs that I like.
+
+## Acessible for all screen sizes
+CubeOS is fully functional and stylized on any type of device. That means you can check out the website on a phone, tablet, computer, maybe even a fridge. Phone version of the site the only version where the music player is not present.
 
 # Tech Stack
 

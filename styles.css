@@ -61,6 +61,7 @@ a{
 	left: 50%; 
 	transform: translate(-50%, -50%);
 	overflow-y: scroll;
+	overflow-x: hidden;
 	z-index: auto;
 	.window-header{
 	display: flex;
@@ -96,11 +97,12 @@ a{
 	justify-content: space-between;
 	align-items: flex-start;
 	width: 100%;
-	background: rgba(255,255,255, 0.5);
+	background: rgba(0,0,0, 0.5);
 	backdrop-filter: blur(10px);
 	border-radius: 5px;
 	.topbar-text{
-			background: rgba(255,255,255, 0.8); 
+			background: rgba(0,0,0, 0.8);
+			color: white; 
 			padding: 5px; 
 			border-radius: 5px;
 
@@ -119,7 +121,7 @@ a{
 .icon{
 	padding-top: 48px;
 	padding-left: 16px;
-  width: 80px;
+  width: 90px;
   cursor: pointer;
   p{
    	color: white;
@@ -129,8 +131,8 @@ a{
 		margin: 0px;
   }
   img{
-		width: 72px;
-		height: 72px;
+		width: 82px;
+		height: 82px;
 		border: solid black 3px;
 		border-radius: 5px;
 		box-shadow:  0px 13px 15px 0px rgba(0, 0, 0, 0.36);	
@@ -142,8 +144,8 @@ a{
 }
 .move-it{
 	position: relative;
-	left: 150px;
-	bottom: 592px;
+	left: 180px;
+	bottom: 631px;
 }
 
 /* styling for desktop app window content */
@@ -276,6 +278,7 @@ a{
 			padding: 10px;
 			margin-bottom: 5px;
 			cursor: pointer;
+			font-family: monospace;
 		}
 	}
 
@@ -295,8 +298,44 @@ a{
 	}
 
 	.eight-cube{
+		border-radius: 10px;
 		color: white;
-		text-align: center;
+		.cube-outer{
+			display: flex;
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%);
+			justify-content: center;
+			align-items: center;
+			width: 250px;
+			height: 250px;
+			border-radius: 5px;
+			margin-top: 20px;
+		}
+		.cube-inner{
+			width: 170px;
+			height: 170px;
+			text-align: center;
+			border-radius: 5px;
+			.text{
+			   position: relative;
+				 top: 30px;
+				 right: 3px;
+				 font-size: 24px;
+
+		  }
+		}
+		button{
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%);
+			top: 80%;
+			padding: 20px;
+			font-size: 16px;
+			font-family: monospace;
+		}
+
+
 	}
 
 
@@ -322,7 +361,6 @@ a{
 	  max-width: 90%;
 	  max-height: 90%;
 	  border-radius: 5px;
-	  overflow: hidden;
 	  animation: zoomIn 0.5s;
   	}
   	.modal4-content{

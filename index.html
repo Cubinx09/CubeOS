@@ -52,15 +52,15 @@
 
 		    <!-- Define the section for displaying the seek slider-->
 		    <div class="slider_container">
-		      <div class="current-time">00:00</div>
-		      <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-		      <div class="total-duration">00:00</div>
+		    	<div class="current-time">00:00</div>
+		      <input type="range" min="0" max="100" value="0" class="seek_slider" onchange="seekTo()">
+			   <div class="total-duration">00:00</div>
 
 		    </div>
 
 		    <!-- Define the section for displaying the volume slider-->
 		    <div class="slider_container">
-		      <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+		      <input type="range" min="1" max="100" value="99" class="volume_slider" oninput= "setVolume()">
 		    </div>
 		  </div>
 
@@ -117,7 +117,7 @@
 
 		</div>
 		<div id = "cubeOpen" class = "icon move-it">
-			<img src = "images/scroll.webp" alt = "8 cube">
+			<img src = "images/8cube.webp" alt = "8 cube">
 			<p> 8 Cube </p>
 
 		</div> 
@@ -240,7 +240,7 @@
 			</div>
 
 			<div class = "notes">
-				<h1>Notepad for your convience :)</h1>
+				<h1 class = "app-heading" style="color: white;">Notepad for your convience :)</h1>
 
 				<div class = "notes-body">
 					<textarea id = "text" class = "input-box">Type something!</textarea>
@@ -302,6 +302,15 @@
 			<div class = "eight-cube">
 				<h1 class = "app-heading">8 Cube</h1>
 				<h3 class = "app-heading">Ask something.. then roll the cube.. let it decide your fate..</h3>
+
+				<div class = "cube">
+					<div class = "cube-outer" style = "background: black;">
+						<div class = "cube-inner" style = "background: darkblue;">
+							<p class = "text"></p>
+						</div>
+					</div>
+				</div>
+				<button id = "roll" >Roll</button>
 
 			</div>
 

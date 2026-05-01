@@ -250,6 +250,11 @@ let track_list = [
     path: "music/1-03 - Electrified.mp3",
   },
   {
+    name: "The Secretary Song",
+    artist: "The Go! Team",
+    path: "music/The Secretary Song - The Go! Team.mp3",
+  },
+  {
     name: "the end",
     artist: "Goreshit",
     path: "music/05 the end - goreshit.mp3",
